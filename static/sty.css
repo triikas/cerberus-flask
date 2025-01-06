@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'TacticSans';
+	src: url(fonts/TacticSansExd-Bld.ttf)  format('truetype');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+
+}
+
+.hover-this{
+  transition: all 0.3s ease;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  /*mix-blend-mode: difference;*/
+  transition: transform 0.3s ease;
+}
+
+/*.hover-this:hover ~ .cursor {*/
+/*  transform:translate(-50%, -50%) scale(11);*/
+/*}*/
+
+.cursor.large {
+  transform:translate(-50%, -50%) scale(11);
+}
+
+.cursor.large-2 {
+  transform:translate(-50%, -50%) scale(2);
+}
+
+/*.cursor.shrink {*/
+/*  animation: shrink 0.3s forwards;*/
+/*}*/
+
+/*@keyframes grow {*/
+/*  from {*/
+/*    padding: 0.6rem;*/
+/*  }*/
+/*  to {*/
+/*    padding: 6.6rem;*/
+/*  }*/
+/*}*/
+
+/*@keyframes shrink {*/
+/*  from {*/
+/*    padding: 6.6rem;*/
+/*  }*/
+/*  to {*/
+/*    padding: 0.6rem;*/
+/*  }*/
+/*}*/
+
+.fon{
+    padding: 20px 60px 20px 60px;
+	background-color: #a7d300;
+	font-family: TacticSans;
+	background-size: cover;
+
+}
+
+.twitch > :first-child{
+	display: none;
+}
+
+.twitch > :nth-child(2){
+	width: 1300px;
+	height: 600px;
+}
+
+h2{
+	font-size: 60px;
+}
+
+a{
+	text-decoration: none;
+	display: block;
+	color: #212529;
+	cursor: none;
+	&:hover{
+		color: #532af2;
+	}
+}
+
+.text-border{
+	border: rgba(33,37,41,0) solid 1px;
+	/*padding: 15px;*/
+	transition: border 0.5s ease-in-out;
+
+	&:hover{
+		border: rgba(33,37,41,0.79) solid 1px;
+	}
+}
+/*.text-border:hover ~ .plus, .plus-2{*/
+/*	visibility: visible;*/
+/*}*/
+
+.fon2{
+	width: 100%;
+	height: 50vw;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: 3;
+}
+
+.plus{
+	width: 15px;
+	height: 15px;
+	border-top: rgba(33,37,41) solid 3px;
+	border-left: rgba(33,37,41) solid 3px;
+	/*visibility: collapse;*/
+	/*position: relative;*/
+}
+
+.plus-2{
+	width: 15px;
+	height: 15px;
+	border-bottom: rgba(33,37,41) solid 3px;
+	border-right: rgba(33,37,41) solid 3px;
+	/*visibility: collapse;*/
+	/*position: relative;*/
+}
+
+.plus-3{
+	width: 15px;
+	height: 15px;
+	border-bottom: rgba(33,37,41) solid 3px;
+	border-left: rgba(33,37,41) solid 3px;
+	/*visibility: collapse;*/
+	/*position: relative;*/
+}
+
+.plus-4{
+	width: 15px;
+	height: 15px;
+	border-right: rgba(33,37,41) solid 3px;
+	border-top: rgba(33,37,41) solid 3px;
+	/*visibility: collapse;*/
+	/*position: relative;*/
+}

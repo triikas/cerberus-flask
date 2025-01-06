@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+
+{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='sty.css') }}">{% endblock %}
+
+{% block content %}
+{#    <div class="fon2" style="background-image: url({{ url_for('static', filename='img/q3.png') }})"></div>#}
+    <div class="w-100 fon r" style="background-image: url({{ url_for('static', filename='img/fon.png') }})">
+        <div class="cursor"></div>
+        <div style="height: 100vh;" class="">
+            <div class="d-flex align-items-center">
+                <div style="width: 53%;"><img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 400px"></div>
+                <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 5%;" class="hover-this-2">
+                <div class="d-flex justify-content-end align-items-center hover-this-2" style="width: 53%;">
+                    <a style="padding-right: 20px" href="#about">Кто мы?</a>
+                    <a style="padding-right: 20px">Состав</a>
+                    <a style="padding-right: 20px" href="#merch">Мерч</a>
+                    <a style="padding-right: 20px" href="#twitch">Трансляции</a>
+                </div>
+{#                <div class="cursor-2"></div>#}
+            </div>
+            <div style=" height: 80%; align-content: center">
+                <div style="font-size: 150px; font-weight: bold; width: 1050px" class="hover-this">CERBERUS</div>
+{#                <div class="cursor"></div>#}
+            </div>
+        </div>
+
+        <div id="about" class="d-flex justify-content-between" style="padding-bottom: 130px;">
+            <div>
+                <h2 class="hover-this mb-5">Кто мы?</h2>
+                <div class="text-border hover-this">
+                    <div class="plus"></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <p>Cerberus Esports — молодая киберспортивная организация, начавшая свой путь с состава по Counter-Strike в октябре 2022 года, изначально выступая в ESEA OPEN лиге под тегом Mountain Space. С самого начала пути команды составы собирались из молодых и перспективных игроков, так как в силу низкого возраста организации на рынке - она не обладала средствами для покупки звёздных игроков. Пиком для одного из подобных составов стал PLAY-OFF стадия лиги ESEA MAIN. На данный момент организация имеет составы с таких дисциплинах как CS2 и VALORANT.</p>
+                        <p class="mb-0 pb-0">Cerberus Esports всегда открыты к предложениям от начинающих игроков и команд желающих выступать под тегом организации, а так же брендов, желающих заключить рекламное партнёрство</p>
+                    </div>
+                    <div class="d-flex justify-content-end"> <div class="plus-2"></div></div>
+                </div>
+{#                <div class="cursor"></div>#}
+            </div>
+            <div style="width: 20%"></div>
+            <div class="text-border">
+                <div class="plus"></div>
+                <div style="padding-left: 15px; padding-right: 15px;">
+                    <div style="height: 324px; width: 100%; background-color: #d3435f; background-image: url({{ url_for('static', filename='img/photo1.jpg') }}); background-position: center top; background-size: cover; background-repeat: no-repeat"></div>
+                    <div class="d-flex justify-content-start">
+                        <div style="height: 300px; width: 500px; background-color: #912036; background-image: url({{ url_for('static', filename='img/photo2.jpg') }}); background-position: center bottom; background-size: cover; background-repeat: no-repeat"></div>
+                        <div style="height: 300px; width: 300px; background-color: #d3667c; background-image: url({{ url_for('static', filename='img/photo3.jpg') }}); background-position: center top; background-size: cover; background-repeat: no-repeat"></div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end"> <div class="plus-2"></div></div>
+{#                <div class="d-flex justify-content-start">#}
+{#                    <div style="height: 300px; width: 600px; background-color: #813546"></div>#}
+{#                    <div>остальное</div>#}
+{#                </div>#}
+            </div>
+        </div>
+
+        <div id="merch" style="padding-bottom: 130px" class="">
+            <div class="d-flex justify-content-between align-items-center" style="padding-bottom: 60px">
+                <img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 600px">
+                <div><h2 class="hover-this">Мерч</h2></div>
+{#                <div class="cursor"></div>#}
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-border">
+                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                            <div style="padding-left: 15px; padding-right: 15px;">
+                                <a href="https://vk.com/market/product/dzhersi-202158227-7160410" class="col" style=" height: 600px; background-image: url({{ url_for('static', filename='img/merch1.png') }}); background-repeat: no-repeat; background-size: cover; background-position: center"></a>
+                            </div>
+                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-border">
+                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                            <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="https://vk.com/market/product/dzhersi-202158227-6618954" class="col" style=" height: 600px;  background-image: url({{ url_for('static', filename='img/merch2.png') }}); background-repeat: no-repeat; background-size: cover; background-position: center"></a>
+                               </div>
+                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-border">
+                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                            <div style="padding-left: 15px; padding-right: 15px;">
+                    <a href="https://vk.com/market/product/usluga-kommentatora-202158227-8042733" class="col" style="background-color: #72ff56; height: 600px; background-image: url({{ url_for('static', filename='img/merch3.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center"></a>
+                               </div>
+                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="twitch" class="text-center" style="padding-bottom: 130px">
+            <h2 class="mb-5 hover-this">Трансляции</h2>
+            <div class="d-flex justify-content-center">
+{#                <div style="background-color: #ff8c28; height: 500px; width: 800px"></div>#}
+                <div class="text-border">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div id="twitch-embed" class="twitch" style="padding-left: 15px; padding-right: 15px;"></div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+
+
+                <!-- Load the Twitch embed JavaScript file -->
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+                <script type="text/javascript">
+                  new Twitch.Embed("twitch-embed", {
+                    width: 0,
+                    height: 0,
+                    channel: "cerberus__esports",
+                    layout: "video",
+                    autoplay: false,
+                    // Only needed if this page is going to be embedded on other websites
+                    parent: ["127.0.0.1:5000"]
+                  });
+                  embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+                    var player = embed.getPlayer();
+                    player.play();
+                  });
+                </script>
+            </div>
+{#            <div class="cursor"></div>#}
+        </div>
+
+        <div class="d-flex justify-content-center " style="">
+{#            <div class="cursor"></div>#}
+            <div style="text-align: right; padding-top: 30px; width: 200px" class="hover-this-2">
+                <h4>Навигация</h4>
+                <a href="#about">Кто мы?</a>
+                <a href="#about">Галлерея</a>
+                <a>Состав</a>
+                <a href="#merch">Мерч</a>
+                <a href="#twitch">Трансляции</a>
+            </div>
+            <img class="hover-this" src="{{ url_for('static', filename='img/q.png') }}" style="width: 250px; height: 250px; margin-right: 60px; margin-left: 60px">
+            <div style="padding-top: 30px; width: 200px;" class="hover-this-2">
+                <h4>Контакты</h4>
+                <a href="https://vk.com/cerberus__esports ">Вконтакте</a>
+                <div>TeamSpeak</div>
+
+
+                <a href="https://discord.gg/TXTgBP3YNe">Discord</a>
+                <a href="https://www.twitch.tv/cerberus__esports">Twitch</a>
+                <div>support@cerberus.ru</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

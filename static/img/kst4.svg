@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4036.09 71.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_Безымянный_градиент-3);
+      }
+
+      .cls-3 {
+        fill: url(#_Безымянный_градиент-2);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент" data-name="Безымянный градиент" x1="953.81" y1="-12.79" x2="974.77" y2="171.66" gradientTransform="translate(0 76) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#292929"/>
+      <stop offset="1" stop-color="#0f0f0f"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент-2" data-name="Безымянный градиент" x1="2619.7" y1="-279.69" x2="2657.12" y2="49.68" xlink:href="#_Безымянный_градиент"/>
+    <linearGradient id="_Безымянный_градиент-3" data-name="Безымянный градиент" x1="3682.66" y1="-237.87" x2="3709.35" y2="-2.95" xlink:href="#_Безымянный_градиент"/>
+  </defs>
+  <g id="_Слой_2-2" data-name=" Слой 2">
+    <g id="_Слой_1-2" data-name=" Слой 1-2">
+      <path class="cls-1" d="m0,0h1919.67v71.54H0V0Z"/>
+      <path class="cls-3" d="m2078.23,0h1155.64v71.54h-1155.64V0Z"/>
+      <path class="cls-2" d="m3392.43,0h643.66v71.54h-643.66V0Z"/>
+    </g>
+  </g>
+</svg>
