@@ -1,35 +1,34 @@
 {% extends "base.html" %}
 
-{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='sty.css') }}">{% endblock %}
+{% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='sty-mobile.css') }}">{% endblock %}
 
 {% block content %}
 {#    <div class="fon2" style="background-image: url({{ url_for('static', filename='img/q3.png') }})"></div>#}
+
     <div class="w-100 fon r" style="background-image: url({{ url_for('static', filename='img/fon.png') }})">
+        <div class="d-flex justify-content-end position-absolute menu w-100 d-none" style="font-size: xxx-large; position: relative; top: 150px; right: 70px;">
+            <div style="background-color: rgb(33,37,41); border-radius: 20px; padding: 30px">
+                <a href="#about" class="text-light mb-3">Кто мы?</a>
+                <a class="text-light mb-3">Состав</a>
+                <a href="#merch" class="text-light mb-3">Мерч</a>
+                <a href="#twitch" class="text-light mb-3">Трансляции</a>
+            </div>
+    </div>
         <div class="cursor"></div>
         <div style="height: 100vh;" class="">
-            <div class="d-flex align-items-center nav-max">
-                <div style="width: 53%;"><img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 400px"></div>
-                <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 5%;" class="hover-this-2">
-                <div class="d-flex justify-content-end align-items-center hover-this-2" style="width: 53%;">
-                    <a style="padding-right: 20px" href="#about">Кто мы?</a>
-                    <a style="padding-right: 20px">Состав</a>
-                    <a style="padding-right: 20px" href="#merch">Мерч</a>
-                    <a style="padding-right: 20px" href="#twitch">Трансляции</a>
-                </div>
-{#                <div class="cursor-2"></div>#}
-            </div>
-            <div class="d-flex align-items-center justify-content-between nav-min">
-                <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 72px;" class="hover-this-2">
-                <div class="d-flex justify-content-end align-items-center hover-this-2" style="">
-                    <a style="padding-right: 20px" href="#about">Кто мы?</a>
-                    <a style="padding-right: 20px">Состав</a>
-                    <a style="padding-right: 20px" href="#merch">Мерч</a>
-                    <a style="padding-right: 20px" href="#twitch">Трансляции</a>
+            <div class="d-flex align-items-center justify-content-between">
+                <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 100px;" class="hover-this-2">
+                <div class="d-flex justify-content-end align-items-center hover-this-2" onclick="menu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                    </svg>
                 </div>
 {#                <div class="cursor-2"></div>#}
             </div>
             <div style=" height: 80%; align-content: center">
-                <div style="font-size: 150px; font-weight: bold; width: 1050px" class="hover-this name">CERBERUS</div>
+                <div style="font-size: 150px; font-weight: bold;" class="hover-this name">CER</div>
+                <div style="font-size: 150px; font-weight: bold; text-align: center" class="hover-this name">BE</div>
+                <div style="font-size: 150px; font-weight: bold; text-align: right" class="hover-this name">RUS</div>
 {#                <div class="cursor"></div>#}
             </div>
         </div>
@@ -48,7 +47,7 @@
 {#                <div class="cursor"></div>#}
             </div>
             <div style="width: 20%"></div>
-            <div class="text-border imgs">
+            <div class="text-border imgs d-none">
                 <div class="plus"></div>
                 <div style="padding-left: 15px; padding-right: 15px;">
                     <div style="height: 324px; width: 100%; background-color: #d3435f; background-image: url({{ url_for('static', filename='img/photo1.jpg') }}); background-position: center top; background-size: cover; background-repeat: no-repeat" class="img-1"></div>
@@ -138,19 +137,19 @@
 {#            <div class="cursor"></div>#}
         </div>
 
-        <div class="d-flex justify-content-center " style="">
+        <div class="d-flex justify-content-left " style="">
 {#            <div class="cursor"></div>#}
-            <div style="text-align: right; padding-top: 30px; width: 200px" class="hover-this-2">
-                <h4>Навигация</h4>
+            <div style=" padding-top: 30px; padding-right: 60px; padding-left: 60px" class="hover-this-2">
+                <h4 style="font-size: 40px">Навигация</h4>
                 <a href="#about">Кто мы?</a>
                 <a href="#about">Галлерея</a>
                 <a>Состав</a>
                 <a href="#merch">Мерч</a>
                 <a href="#twitch">Трансляции</a>
             </div>
-            <img class="hover-this" src="{{ url_for('static', filename='img/q.png') }}" style="width: 250px; height: 250px; margin-right: 60px; margin-left: 60px">
+{#            <img class="hover-this" src="{{ url_for('static', filename='img/q.png') }}" style="width: 250px; height: 250px; margin-right: 60px; margin-left: 60px">#}
             <div style="padding-top: 30px; width: 200px;" class="hover-this-2">
-                <h4>Контакты</h4>
+                <h4 style="font-size: 40px">Контакты</h4>
                 <a href="https://vk.com/cerberus__esports ">Вконтакте</a>
                 <div>TeamSpeak</div>
 

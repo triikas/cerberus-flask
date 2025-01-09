@@ -65,3 +65,13 @@ var embed = new Twitch.Embed('twitch-embed', {
 embed.addEventListener(Twitch.Embed.VIDEO_READY, function() {
   console.log('The video is ready');
 });
+
+function menu() {
+    cls = document.querySelector(".menu")
+    console.log(cls.classList)
+    if (cls.classList.contains("d-none")) {
+        cls.classList.remove("d-none")
+    } else {
+        cls.classList.add("d-none")
+    }
+}

@@ -8,6 +8,7 @@ html, body {
   padding: 0;
   cursor: none;
 
+
 }
 
 .hover-this{
@@ -63,6 +64,7 @@ html, body {
     padding: 20px 60px 20px 60px;
 	background-color: #a7d300;
 	font-family: TacticSans;
+    font-size: xx-large;
 	background-size: cover;
 	background-position: top center;
 
@@ -73,7 +75,7 @@ html, body {
 }
 
 .twitch > :nth-child(2){
-	width: 1300px;
+	width: 800px;
 	height: 600px;
 }
 
@@ -151,60 +153,3 @@ a{
 }
 
 
-@media (max-width: 1453px) {
-    .twitch > :nth-child(2){
-		width: 900px;
-		height: 600px;
-	}
-}
-
-@media (max-width: 1053px) {
-    .twitch > :nth-child(2){
-		width: 700px;
-		height: 500px;
-	}
-}
-
-.nav-min{
-	display: none !important;
-}
-
-@media (max-width: 1140px) {
-    .nav-max{
-		display: none !important;
-	}
-	.nav-min{
-		display: flex !important;
-	}
-}
-
-@media (max-width: 1200px) {
-    .name{
-		font-size: 100px !important;
-		width: 300px !important;
-	}
-}
-
-@media (max-width: 1490px) {
-    /*.img-2{*/
-	/*	width: 300px !important;*/
-	/*}*/
-	.img-3{
-		width: 0 !important;
-	}
-}
-
-@media (max-width: 1180px) {
-	.img-2{
-		width: 0 !important;
-	}
-	.imgs{
-		display: none;
-	}
-}
-
-@media (max-width: 990px) {
-	.img-dot{
-		display: none;
-	}
-}
