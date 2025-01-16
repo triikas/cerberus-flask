@@ -4,7 +4,12 @@
 
 {% block content %}
 {#    <div class="fon2" style="background-image: url({{ url_for('static', filename='img/q3.png') }})"></div>#}
+
+    <div class="position-fixed" style="background-color: rgba(85,42,255,0.8); padding: 10px; bottom: 0">
+        <p class="m-0 text-light">Сайт находится в разработке</p>
+    </div>
     <div class="w-100 fon r" style="background-image: url({{ url_for('static', filename='img/fon.png') }})">
+
         <div class="cursor"></div>
         <div style="height: 100vh;" class="">
             <div class="d-flex align-items-center nav-max">
@@ -12,8 +17,8 @@
                 <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 5%;" class="hover-this-2">
                 <div class="d-flex justify-content-end align-items-center hover-this-2" style="width: 53%;">
                     <a style="padding-right: 20px" href="#about">Кто мы?</a>
-                    <a style="padding-right: 20px">Состав</a>
-                    <a style="padding-right: 20px" href="#merch">Мерч</a>
+{#                    <a style="padding-right: 20px">Состав</a>#}
+                    <a style="padding-right: 20px" href="#team">Состав</a>
                     <a style="padding-right: 20px" href="#twitch">Трансляции</a>
                 </div>
 {#                <div class="cursor-2"></div>#}
@@ -22,8 +27,8 @@
                 <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 72px;" class="hover-this-2">
                 <div class="d-flex justify-content-end align-items-center hover-this-2" style="">
                     <a style="padding-right: 20px" href="#about">Кто мы?</a>
-                    <a style="padding-right: 20px">Состав</a>
-                    <a style="padding-right: 20px" href="#merch">Мерч</a>
+{#                    <a style="padding-right: 20px">Состав</a>#}
+                    <a style="padding-right: 20px" href="#team">Состав</a>
                     <a style="padding-right: 20px" href="#twitch">Трансляции</a>
                 </div>
 {#                <div class="cursor-2"></div>#}
@@ -65,49 +70,112 @@
             </div>
         </div>
 
-        <div id="merch" style="padding-bottom: 130px" class="">
+{#        <div id="merch" style="padding-bottom: 130px" class="">#}
+{#            <div class="d-flex justify-content-between align-items-center" style="padding-bottom: 60px">#}
+{#                <img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 600px" class="img-dot">#}
+{#                <div><h2 class="hover-this">Мерч</h2></div>#}
+{#                <div class="cursor"></div>#}
+{#            </div>#}
+{#            <div class="container-fluid">#}
+{#                <div class="row">#}
+{#                    <div class="col">#}
+{#                        <div class="text-border">#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>#}
+{#                            <div style="padding-left: 15px; padding-right: 15px;">#}
+{#                                <a href="https://vk.com/market/product/dzhersi-202158227-7160410" class="col" style=""><img src="{{ url_for('static', filename='img/merch1.png') }}" style="width: 100%"></a>#}
+{#                            </div>#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                        <div class="text-border">#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>#}
+{#                            <div style="padding-left: 15px; padding-right: 15px;">#}
+{#                    <a href="https://vk.com/market/product/dzhersi-202158227-6618954" class="col" style=" height: 665px"><img src="{{ url_for('static', filename='img/merch2.png') }}" style="width: 100%"></a>#}
+{#                               </div>#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="col">#}
+{#                        <div class="text-border">#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>#}
+{#                            <div style="padding-left: 15px; padding-right: 15px;">#}
+{#                    <a href="https://vk.com/market/product/usluga-kommentatora-202158227-8042733" class="col" style=" height: 665px; background-color: #72ff56; background-image: url({{ url_for('static', filename='img/merch3.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center"></a>#}
+{#                               </div>#}
+{#                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+
+        <div id="team" style="padding-bottom: 130px" class="">
             <div class="d-flex justify-content-between align-items-center" style="padding-bottom: 60px">
                 <img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 600px" class="img-dot">
-                <div><h2 class="hover-this">Мерч</h2></div>
+                <div><h2 class="hover-this">Состав</h2></div>
 {#                <div class="cursor"></div>#}
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div class="text-border">
-                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
-                            <div style="padding-left: 15px; padding-right: 15px;">
-                                <a href="https://vk.com/market/product/dzhersi-202158227-7160410" class="col" style=""><img src="{{ url_for('static', filename='img/merch1.png') }}" style="width: 100%"></a>
-                            </div>
-                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
-                        </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="text-border mx-2" style="width: 20%">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 600px; width: 100%; background-image: url('{{ url_for('static', filename='img/sil.png') }}'); background-position: top center; background-size: cover"></div>
                     </div>
-                    <div class="col">
-                        <div class="text-border">
-                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
-                            <div style="padding-left: 15px; padding-right: 15px;">
-                    <a href="https://vk.com/market/product/dzhersi-202158227-6618954" class="col" style=" height: 665px"><img src="{{ url_for('static', filename='img/merch2.png') }}" style="width: 100%"></a>
-                               </div>
-                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="text-border">
-                            <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
-                            <div style="padding-left: 15px; padding-right: 15px;">
-                    <a href="https://vk.com/market/product/usluga-kommentatora-202158227-8042733" class="col" style=" height: 665px; background-color: #72ff56; background-image: url({{ url_for('static', filename='img/merch3.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center"></a>
-                               </div>
-                            <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
-                        </div>
-                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
                 </div>
+                <div class="text-border mx-2" style="width: 20%">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 600px; width: 100%; background-image: url('{{ url_for('static', filename='img/sil.png') }}'); background-position: top center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+                <div class="text-border mx-2" style="width: 20%">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 600px; width: 100%; background-image: url('{{ url_for('static', filename='img/sil.png') }}'); background-position: top center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+                <div class="text-border mx-2" style="width: 20%">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 600px; width: 100%; background-image: url('{{ url_for('static', filename='img/sil.png') }}'); background-position: top center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+                <div class="text-border mx-2" style="width: 20%">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 600px; width: 100%; background-image: url('{{ url_for('static', filename='img/sil.png') }}'); background-position: top center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around pt-4">
+                <div style="height: 55px; border-bottom: 3px solid black; width: 600px"></div>
+                <div class="text-border" style="width: 110px">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 80px; width: 80px; background-image: url('{{ url_for('static', filename='img/ks.png') }}'); background-position: center center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+                <div class="text-border" style="width: 110px">
+                    <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
+                    <div style="padding-left: 15px; padding-right: 15px;">
+                        <div style="height: 80px; width: 80px; background-image: url('{{ url_for('static', filename='img/val.png') }}'); background-position: center center; background-size: cover"></div>
+                    </div>
+                    <div class="d-flex justify-content-between"> <div class="plus-3"></div><div class="plus-2"></div></div>
+                </div>
+                <div style="height: 55px; border-bottom: 3px solid black; width: 600px"></div>
             </div>
         </div>
 
         <div id="twitch" class="text-center" style="padding-bottom: 130px">
             <h2 class="mb-5 hover-this">Трансляции</h2>
             <div class="d-flex justify-content-center">
-{#                <div style="background-color: #ff8c28; height: 500px; width: 800px"></div>#}
                 <div class="text-border">
                     <div class="d-flex justify-content-between"> <div class="plus"></div><div class="plus-4"></div></div>
                     <div id="twitch-embed" class="twitch" style="padding-left: 15px; padding-right: 15px;"></div>
