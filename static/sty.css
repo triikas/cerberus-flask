@@ -65,7 +65,7 @@ html, body {
 	font-family: TacticSans;
 	background-size: cover;
 	background-position: top center;
-
+	min-width: 865px;
 }
 
 .twitch > :first-child{
@@ -100,6 +100,7 @@ a{
 		border: rgba(33,37,41,0.79) solid 1px;
 	}
 }
+
 /*.text-border:hover ~ .plus, .plus-2{*/
 /*	visibility: visible;*/
 /*}*/
@@ -165,8 +166,55 @@ a{
 	}
 }
 
+@media (max-width: 1653px) {
+    .player{
+		height: 300px!important;
+		& h4{
+			font-size: 30px!important;
+		}
+	}
+	.game-border{
+		width: 300px!important;
+	}
+}
+
+@media (max-width: 1053px) {
+	.game-border{
+		width: 200px!important;
+	}
+}
+
+@media (max-width: 1390px) {
+    .team-max{
+		display: none!important;
+	}
+	.team-min{
+		display: block!important;
+	}
+}
+
 .nav-min{
 	display: none !important;
+}
+
+.player-text{
+	/*background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));*/
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+	width: 100%;
+	padding-top: 10px;
+	height: 30%;
+	color: white;
+	display: flex;
+	visibility: hidden;
+	transition: visibility 0.5s ease-in-out;
+	& h4{
+		font-size: 40px;
+	}
+
+}
+
+.text-border:hover .player-text{
+	visibility: visible;
 }
 
 @media (max-width: 1140px) {
