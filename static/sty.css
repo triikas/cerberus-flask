@@ -205,15 +205,19 @@ a{
 	height: 30%;
 	color: white;
 	display: flex;
-	visibility: hidden;
-	transition: visibility 0.5s ease-in-out;
+
 	& h4{
 		font-size: 40px;
 	}
 
 }
 
-.text-border:hover .player-text{
+.player-role{
+	visibility: hidden;
+	transition: visibility 0.5s ease-in-out;
+}
+
+.text-border:hover .player-role{
 	visibility: visible;
 }
 
