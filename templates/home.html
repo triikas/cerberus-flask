@@ -3,13 +3,10 @@
 {% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='sty.css') }}">{% endblock %}
 
 {% block content %}
-{#    <div class="fon2" style="background-image: url({{ url_for('static', filename='img/q3.png') }})"></div>#}
-
     <div class="position-fixed" style="background-color: rgba(85,42,255,0.8); padding: 10px; bottom: 0">
         <p class="m-0 text-light">Сайт находится в разработке</p>
     </div>
     <div class="w-100 fon r" style="background-image: url({{ url_for('static', filename='img/fon.png') }})">
-
         <div class="cursor"></div>
         <div style="height: 100vh;" class="">
             <div class="d-flex align-items-center nav-max">
@@ -21,7 +18,6 @@
                     <a style="padding-right: 20px" href="#team">Состав</a>
                     <a style="padding-right: 20px" href="#twitch">Трансляции</a>
                 </div>
-{#                <div class="cursor-2"></div>#}
             </div>
             <div class="d-flex align-items-center justify-content-between nav-min">
                 <img src="{{ url_for('static', filename='img/q.png') }}" style="width: 72px;" class="hover-this-2">
@@ -31,11 +27,9 @@
                     <a style="padding-right: 20px" href="#team">Состав</a>
                     <a style="padding-right: 20px" href="#twitch">Трансляции</a>
                 </div>
-{#                <div class="cursor-2"></div>#}
             </div>
             <div style=" height: 80%; align-content: center">
                 <div style="font-size: 150px; font-weight: bold; width: 1050px" class="hover-this name">CERBERUS</div>
-{#                <div class="cursor"></div>#}
             </div>
         </div>
 
@@ -113,7 +107,6 @@
             <div class="d-flex justify-content-between align-items-center" style="padding-bottom: 60px">
                 <img src="{{ url_for('static', filename='img/kst4.svg') }}" style="width: 600px" class="img-dot">
                 <div><h2 class="hover-this">Состав</h2></div>
-{#                <div class="cursor"></div>#}
             </div>
 
             <div class="d-flex justify-content-between mb-5 team-max">
@@ -328,7 +321,6 @@
         </div>
 
         <div class="d-flex justify-content-center " style="">
-{#            <div class="cursor"></div>#}
             <div style="text-align: right; padding-top: 30px; width: 200px" class="hover-this-2">
                 <h4>Навигация</h4>
                 <a href="#about">Кто мы?</a>
@@ -342,8 +334,6 @@
                 <h4>Контакты</h4>
                 <a href="https://vk.com/cerberus__esports ">Вконтакте</a>
                 <div>TeamSpeak</div>
-
-
                 <a href="https://discord.gg/TXTgBP3YNe">Discord</a>
                 <a href="https://www.twitch.tv/cerberus__esports">Twitch</a>
                 <div>support@cerberus.ru</div>

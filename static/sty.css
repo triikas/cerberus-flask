@@ -25,10 +25,6 @@ html, body {
   transition: transform 0.3s ease;
 }
 
-/*.hover-this:hover ~ .cursor {*/
-/*  transform:translate(-50%, -50%) scale(11);*/
-/*}*/
-
 .cursor.large {
   transform:translate(-50%, -50%) scale(11);
 }
@@ -36,28 +32,6 @@ html, body {
 .cursor.large-2 {
   transform:translate(-50%, -50%) scale(2);
 }
-
-/*.cursor.shrink {*/
-/*  animation: shrink 0.3s forwards;*/
-/*}*/
-
-/*@keyframes grow {*/
-/*  from {*/
-/*    padding: 0.6rem;*/
-/*  }*/
-/*  to {*/
-/*    padding: 6.6rem;*/
-/*  }*/
-/*}*/
-
-/*@keyframes shrink {*/
-/*  from {*/
-/*    padding: 6.6rem;*/
-/*  }*/
-/*  to {*/
-/*    padding: 0.6rem;*/
-/*  }*/
-/*}*/
 
 .fon{
     padding: 20px 60px 20px 60px;
@@ -100,10 +74,6 @@ a{
 		border: rgba(33,37,41,0.79) solid 1px;
 	}
 }
-
-/*.text-border:hover ~ .plus, .plus-2{*/
-/*	visibility: visible;*/
-/*}*/
 
 .fon2{
 	width: 100%;
